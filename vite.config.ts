@@ -1,4 +1,5 @@
 import devtools from "solid-devtools/vite";
+import UnoCSS from "unocss/vite";
 import { defineConfig } from "vite";
 import solidPlugin from "vite-plugin-solid";
 import tsconfigPaths from "vite-tsconfig-paths";
@@ -15,6 +16,7 @@ export default defineConfig({
         componentLocation: true,
       },
     }),
+    UnoCSS(),
     solidPlugin(),
   ],
   server: { port: 3000 },
